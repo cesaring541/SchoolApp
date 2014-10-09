@@ -13,6 +13,44 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
+import socket
+if socket.gethostname().startswith('localhost'):
+    DEVEL = True
+else:
+    DEVEL = False
+
+DEBUG = DEVEL
+
+TEMPLATE_DEBUG = DEVEL
+
+if DEVEL:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
+
+    STATICFILES_DIRS = (
+        os.path.join(BASE_DIR, "static"),
+    )
+
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'AppSchool',
+            'USER': 'root',
+            'PASSWORD': 'adminis',
+        }
+    }
+
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+
+
+
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
