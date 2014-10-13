@@ -138,8 +138,21 @@ def saveAct(request):
 	fecha_inicio=request.POST.get('fecha_inicio')
 	fecha_final=request.POST.get('fecha_final')
 	descripcion_actividad=request.POST.get('narrativa')
-	actividad=Actividad.objects.create(id_logro=logro,nombre_actividad=nombre_actividad,fecha_inicio=fecha_inicio,fecha_fin=fecha_final,descripcion_actividad=descripcion_actividad)
-	actividad.save()
+	is_external = request.POST.get('external')
+
+	is_external = True if is_external == 'on' else False
+
+	if is_external:
+		activity_file = request.FILES.get('package')
+
+
+	actividad=Actividad.objects.create(
+		id_logro=logro,nombre_actividad=nombre_actividad,
+		fecha_inicio=fecha_inicio,fecha_fin=fecha_final,
+		descripcion_actividad=descripcion_actividad,
+		actividad_externa=is_external, paquete=activity_file
+	)
+	#actividad.save()
 	return redirect(reverse('pensum'),context_instance=RequestContext(request))
 
 	

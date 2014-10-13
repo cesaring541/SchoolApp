@@ -15,9 +15,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 import socket
 if socket.gethostname().startswith('localhost'):
-    DEVEL = True
-else:
     DEVEL = False
+else:
+    DEVEL = True
 
 DEBUG = DEVEL
 

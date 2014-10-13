@@ -10,4 +10,11 @@ urlpatterns = patterns('',
 	url(r'^Logros$', 'front.views.Logros', name='Logros'),
 	url(r'^actividades$', 'front.views.actividades', name='actividades'),
 	url(r'^saveActividad$', 'front.views.saveActividad', name='saveActividad'),
+	url(r'^foros$','front.views.foros',name='foros'),
+	url(r'^observaciones$', 'front.views.observaciones', name='observaciones'),
+	url(r'^wikis$', 'front.views.wikis', name='wikis'),
+	url(r'^paginawiki$', 'front.views.paginawiki', name='paginawiki'),
+	url(r'^formPaginaWiki$', 'front.views.formPaginaWiki', name='formPaginaWiki'),
+	url(r'^saveFormPaginaWiki$', 'front.views.saveFormPaginaWiki', name='saveFormPaginaWiki'),
+
 )

@@ -29,12 +29,27 @@ class Logro(models.Model):
         db_table = u'Logro'
 
 class Actividad(models.Model):
+
+    def get_package_path(self, filename):
+        return 'packages/zipped/%s' % (filename)
+
     id_logro = models.ForeignKey(Logro, db_column='ID_LOGRO') # Field name made lowercase.
     nombre_actividad = models.CharField(max_length=600, db_column='NOMBRE_ACTIVIDAD') # Field name made lowercase.
     descripcion_actividad = models.CharField(max_length=3000, db_column='DESCRIPCION_ACTIVIDAD') # Field name made lowercase.
     fecha_inicio = models.DateField(db_column='FECHA_INICIO')
     fecha_fin = models.DateField(db_column='FECHA_FIN')
     estado_envio=models.BooleanField(default=True, db_column='ESTADO_ENVIO')
+    actividad_externa = models.BooleanField(default=False)
+    paquete = models.FileField(upload_to=get_package_path, null=True, blank=True)
+
+    def save(self, *args, **kwargs):
+        if not self.id:
+            super(Actividad, self).save(*args, **kwargs)
+        
+        if self.actividad_externa:
+            extract_package(str(self.id), self.paquete)
+            self.descripcion_actividad = "<a href='/%s/'>Ir a la actividad</a>" % (self.paquete)
+
 
 
     class Meta:
@@ -62,5 +77,26 @@ class Nota(models.Model):
         db_table= u'Nota'
 
 
-        
+import zipfile
+import shutil
+import os      
 
+def extract_package(path, package):
+    #File to unzip
+    path = os.path.join('packages', path)
+
+    print path
+
+    zfile = zipfile.ZipFile(package)
+
+    #Delete target directory
+    
+    try:
+        shutil.rmtree(path)
+    except Exception, e:
+        pass
+
+    #Make target directory
+    os.makedirs(path)
+    #Unzip
+    zfile.extractall(path)

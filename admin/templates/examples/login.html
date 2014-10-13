@@ -23,7 +23,7 @@
     <body class="bg-black">
 
         <div class="form-box" id="login-box">
-            <div class="header">Sign In</div>
+            <div class="header">Iniciar sesion</div>
             {{form_err.username_errors}}
             {{form_err.password_errors}}
             {{form_err.error}}
@@ -36,21 +36,21 @@
                         <input type="password" name="password" class="form-control" placeholder="Password"/>
                     </div>          
                     <div class="form-group">
-                        <input type="checkbox" name="remember_me"/> Remember me
+                        <input type="checkbox" name="remember_me"/>Recordar usuario
                     </div>
                 </div>
                 <div class="footer"> 
 
-                    <button type="submit" class="btn bg-olive btn-block" name="">Sign me in</button> 
+                    <button type="submit" class="btn bg-olive btn-block" name="">Registro</button> 
                     {% csrf_token %}             
-                    <p><a href="#">I forgot my passwrender_to_responseord</a></p>
+                    <p><a href="#">Olvido su contraseña</a></p>
                     
                 
                 </div>
             </form>
 
             <div class="margin text-center">
-                <span>Sign in using social networks</span>
+                <span>Contactanos en redes sociales</span>
                 <br/>
                 <button class="btn bg-light-blue btn-circle"><i class="fa fa-facebook"></i></button>
                 <button class="btn bg-aqua btn-circle"><i class="fa fa-twitter"></i></button>
