@@ -30,9 +30,6 @@ class Logro(models.Model):
 
 class Actividad(models.Model):
 
-    def get_package_path(self, filename):
-        return 'packages/zipped/%s' % (filename)
-
     id_logro = models.ForeignKey(Logro, db_column='ID_LOGRO') # Field name made lowercase.
     nombre_actividad = models.CharField(max_length=600, db_column='NOMBRE_ACTIVIDAD') # Field name made lowercase.
     descripcion_actividad = models.CharField(max_length=3000, db_column='DESCRIPCION_ACTIVIDAD') # Field name made lowercase.
@@ -40,15 +37,15 @@ class Actividad(models.Model):
     fecha_fin = models.DateField(db_column='FECHA_FIN')
     estado_envio=models.BooleanField(default=True, db_column='ESTADO_ENVIO')
     actividad_externa = models.BooleanField(default=False)
-    paquete = models.FileField(upload_to=get_package_path, null=True, blank=True)
+    paquete = models.FileField(upload_to='packages/zipped/', null=True, blank=True)
 
     def save(self, *args, **kwargs):
         if not self.id:
             super(Actividad, self).save(*args, **kwargs)
         
         if self.actividad_externa:
-            extract_package(str(self.id), self.paquete)
-            self.descripcion_actividad = "<a href='/%s/'>Ir a la actividad</a>" % (self.paquete)
+            path = extract_package(str(self.id), self.paquete)
+            Actividad.objects.filter(id=self.id).update(descripcion_actividad="<a href='/%s/'>Ir a la actividad</a>" % (path))
 
 
 
@@ -83,9 +80,9 @@ import os
 
 def extract_package(path, package):
     #File to unzip
-    path = os.path.join('packages', path)
+    path = os.path.join('packages', path, os.path.basename(package.name))
 
-    print path
+    path =path.replace('.zip', '')
 
     zfile = zipfile.ZipFile(package)
 
@@ -100,3 +97,6 @@ def extract_package(path, package):
     os.makedirs(path)
     #Unzip
     zfile.extractall(path)
+
+    return path
+
