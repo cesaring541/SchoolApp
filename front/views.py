@@ -26,7 +26,7 @@ def front(request):
 		cursos=None
 	try:
 		materias=Materia.objects.filter(id_cursos=cursos.id)
-	except Exception, e:
+	except Materia.DoesNotExist:
 		materias=None
 	
 	data={'materias':materias}
