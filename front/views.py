@@ -20,16 +20,14 @@ def front(request):
 	dat=request.user.grado
 	cursos = None
 	materias = None
-	
+
 	try:
 		cursos=Cursos.objects.get(nombre_curso=dat)
-	except Cursos.DoesNotExist:
-		cursos=None
-	try:
 		materias=Materia.objects.filter(id_cursos=cursos.id)
-	except Materia.DoesNotExist:
-		materias=None
-	
+	except Cursos.DoesNotExist:
+		pass
+
+
 	data={'materias':materias}
 	return render_to_response('front/front.html',data,context_instance=RequestContext(request))
 
