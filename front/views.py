@@ -65,11 +65,9 @@ def actividades(request):
 	usuario=User.objects.get(id=id_user)
 	ids=Envio.objects.filter(id_estudiante=usuario).values('id_actividad')
 
-	print ids
 
 	actividad=Actividad.objects.filter(id_logro=logro.id).exclude(id__in=ids)
 
-	print actividad
 		
 	data={'actividad':actividad}
 	return render_to_response('front/pages/front/Actividades.html', data,context_instance=RequestContext(request))
