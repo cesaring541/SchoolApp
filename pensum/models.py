@@ -96,7 +96,7 @@ def extract_package(path, package):
     #Unzip
     zfile.extractall(path)
 
-    path = path + os.path.basename(package.name)
+    path = path + "/" + os.path.basename(package.name)
     path = path.replace('.zip', '')
 
     return path
