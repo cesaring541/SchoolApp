@@ -143,8 +143,8 @@ def saveFormPaginaWiki(request):
 def NotaActividad(request):
 	user=request.user.id
 	estudiante=User.objects.get(id=user)
-	nota=request.POST.get('nota')
-	uid_act=request.POST.get('uid_act')
+	nota=request.GET.get('nota')
+	uid_act=request.GET.get('uid_act')
 	actividad=Actividad.objects.get(id=uid_act)
 	nota=Nota.objects.create(id_actividad=actividad,nota=nota,id_estudiante=estudiante)
 
