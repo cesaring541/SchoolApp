@@ -1,0 +1,314 @@
+[2014-10-09 02:01:50 +0000] [14674] [INFO] Starting gunicorn 19.1.1
+[2014-10-09 02:01:50 +0000] [14674] [INFO] Listening at: http://127.0.0.1:8000 (14674)
+[2014-10-09 02:01:50 +0000] [14674] [INFO] Using worker: sync
+[2014-10-09 02:01:50 +0000] [14679] [INFO] Booting worker with pid: 14679
+[2014-10-09 02:01:50 +0000] [14680] [INFO] Booting worker with pid: 14680
+[2014-10-09 02:01:50 +0000] [14681] [INFO] Booting worker with pid: 14681
+[2014-10-09 02:01:50 +0000] [14682] [INFO] Booting worker with pid: 14682
+[2014-10-09 02:05:22 +0000] [14674] [INFO] Handling signal: term
+[2014-10-09 02:05:22 +0000] [14680] [INFO] Worker exiting (pid: 14680)
+[2014-10-09 02:05:22 +0000] [14681] [INFO] Worker exiting (pid: 14681)
+[2014-10-09 02:05:22 +0000] [14682] [INFO] Worker exiting (pid: 14682)
+[2014-10-09 02:05:22 +0000] [14679] [INFO] Worker exiting (pid: 14679)
+[2014-10-09 02:05:22 +0000] [14674] [INFO] Shutting down: Master
+[2014-10-09 02:06:17 +0000] [14713] [INFO] Starting gunicorn 19.1.1
+[2014-10-09 02:06:17 +0000] [14713] [INFO] Listening at: http://127.0.0.1:8000 (14713)
+[2014-10-09 02:06:17 +0000] [14713] [INFO] Using worker: sync
+[2014-10-09 02:06:17 +0000] [14718] [INFO] Booting worker with pid: 14718
+[2014-10-09 02:06:17 +0000] [14719] [INFO] Booting worker with pid: 14719
+[2014-10-09 02:06:17 +0000] [14720] [INFO] Booting worker with pid: 14720
+[2014-10-09 02:06:17 +0000] [14721] [INFO] Booting worker with pid: 14721
+[2014-10-09 02:09:05 +0000] [14719] [INFO] Worker exiting (pid: 14719)
+[2014-10-09 02:09:05 +0000] [14720] [INFO] Worker exiting (pid: 14720)
+[2014-10-09 02:09:05 +0000] [14713] [INFO] Handling signal: term
+[2014-10-09 02:09:05 +0000] [14718] [INFO] Worker exiting (pid: 14718)
+[2014-10-09 02:09:05 +0000] [14721] [INFO] Worker exiting (pid: 14721)
+[2014-10-09 02:09:05 +0000] [14713] [INFO] Shutting down: Master
+[2014-10-09 02:15:49 +0000] [1393] [INFO] Starting gunicorn 19.1.1
+[2014-10-09 02:15:49 +0000] [1393] [INFO] Listening at: http://127.0.0.1:8000 (1393)
+[2014-10-09 02:15:49 +0000] [1393] [INFO] Using worker: sync
+[2014-10-09 02:15:49 +0000] [1398] [INFO] Booting worker with pid: 1398
+[2014-10-09 02:15:49 +0000] [1399] [INFO] Booting worker with pid: 1399
+[2014-10-09 02:15:49 +0000] [1400] [INFO] Booting worker with pid: 1400
+[2014-10-09 02:15:49 +0000] [1401] [INFO] Booting worker with pid: 1401
+[2014-10-09 02:19:09 +0000] [1400] [INFO] Worker exiting (pid: 1400)
+[2014-10-09 02:19:09 +0000] [1393] [INFO] Handling signal: term
+[2014-10-09 02:19:09 +0000] [1398] [INFO] Worker exiting (pid: 1398)
+[2014-10-09 02:19:09 +0000] [1401] [INFO] Worker exiting (pid: 1401)
+[2014-10-09 02:19:09 +0000] [1399] [INFO] Worker exiting (pid: 1399)
+[2014-10-09 02:19:09 +0000] [1393] [INFO] Shutting down: Master
+[2014-10-11 01:22:55 +0000] [2334] [INFO] Starting gunicorn 19.1.1
+[2014-10-11 01:22:55 +0000] [2334] [INFO] Listening at: http://127.0.0.1:8000 (2334)
+[2014-10-11 01:22:55 +0000] [2334] [INFO] Using worker: sync
+[2014-10-11 01:22:55 +0000] [2339] [INFO] Booting worker with pid: 2339
+[2014-10-11 01:22:55 +0000] [2340] [INFO] Booting worker with pid: 2340
+[2014-10-11 01:22:55 +0000] [2341] [INFO] Booting worker with pid: 2341
+[2014-10-11 01:22:55 +0000] [2342] [INFO] Booting worker with pid: 2342
+[2014-10-11 12:41:10 +0000] [2341] [INFO] Worker exiting (pid: 2341)
+[2014-10-11 12:41:10 +0000] [2342] [INFO] Worker exiting (pid: 2342)
+[2014-10-11 12:41:10 +0000] [2339] [INFO] Worker exiting (pid: 2339)
+[2014-10-11 12:41:10 +0000] [2340] [INFO] Worker exiting (pid: 2340)
+[2014-10-11 12:41:10 +0000] [2334] [INFO] Handling signal: term
+[2014-10-11 12:41:10 +0000] [2334] [INFO] Shutting down: Master
+[2014-10-13 03:06:05 +0000] [1512] [INFO] Starting gunicorn 19.1.1
+[2014-10-13 03:06:05 +0000] [1512] [INFO] Listening at: http://127.0.0.1:8000 (1512)
+[2014-10-13 03:06:05 +0000] [1512] [INFO] Using worker: sync
+[2014-10-13 03:06:05 +0000] [1517] [INFO] Booting worker with pid: 1517
+[2014-10-13 03:06:05 +0000] [1518] [INFO] Booting worker with pid: 1518
+[2014-10-13 03:06:05 +0000] [1519] [INFO] Booting worker with pid: 1519
+[2014-10-13 03:06:05 +0000] [1520] [INFO] Booting worker with pid: 1520
+[2014-10-13 03:06:35 +0000] [1519] [INFO] Worker exiting (pid: 1519)
+[2014-10-13 03:06:35 +0000] [1517] [INFO] Worker exiting (pid: 1517)
+[2014-10-13 03:06:35 +0000] [1518] [INFO] Worker exiting (pid: 1518)
+[2014-10-13 03:06:35 +0000] [1512] [INFO] Handling signal: int
+[2014-10-13 03:06:35 +0000] [1520] [INFO] Worker exiting (pid: 1520)
+[2014-10-13 03:06:36 +0000] [1512] [INFO] Shutting down: Master
+[2014-10-13 03:09:24 +0000] [1689] [INFO] Starting gunicorn 19.1.1
+[2014-10-13 03:09:24 +0000] [1689] [INFO] Listening at: http://127.0.0.1:8000 (1689)
+[2014-10-13 03:09:24 +0000] [1689] [INFO] Using worker: sync
+[2014-10-13 03:09:24 +0000] [1694] [INFO] Booting worker with pid: 1694
+[2014-10-13 03:09:24 +0000] [1695] [INFO] Booting worker with pid: 1695
+[2014-10-13 03:09:24 +0000] [1697] [INFO] Booting worker with pid: 1697
+[2014-10-13 03:09:24 +0000] [1696] [INFO] Booting worker with pid: 1696
+[2014-10-13 03:14:02 +0000] [1103] [INFO] Starting gunicorn 19.1.1
+[2014-10-13 03:14:02 +0000] [1103] [INFO] Listening at: http://127.0.0.1:8000 (1103)
+[2014-10-13 03:14:02 +0000] [1103] [INFO] Using worker: sync
+[2014-10-13 03:14:02 +0000] [1127] [INFO] Booting worker with pid: 1127
+[2014-10-13 03:14:02 +0000] [1128] [INFO] Booting worker with pid: 1128
+[2014-10-13 03:14:02 +0000] [1129] [INFO] Booting worker with pid: 1129
+[2014-10-13 03:14:02 +0000] [1130] [INFO] Booting worker with pid: 1130
+[2014-10-13 03:28:27 +0000] [1129] [INFO] Worker exiting (pid: 1129)
+[2014-10-13 03:28:27 +0000] [1103] [INFO] Handling signal: term
+[2014-10-13 03:28:27 +0000] [1130] [INFO] Worker exiting (pid: 1130)
+[2014-10-13 03:28:27 +0000] [1127] [INFO] Worker exiting (pid: 1127)
+[2014-10-13 03:28:27 +0000] [1128] [INFO] Worker exiting (pid: 1128)
+[2014-10-13 03:28:27 +0000] [1103] [INFO] Shutting down: Master
+[2014-10-13 03:28:30 +0000] [1557] [INFO] Starting gunicorn 19.1.1
+[2014-10-13 03:28:30 +0000] [1557] [INFO] Listening at: http://127.0.0.1:8000 (1557)
+[2014-10-13 03:28:30 +0000] [1557] [INFO] Using worker: sync
+[2014-10-13 03:28:30 +0000] [1562] [INFO] Booting worker with pid: 1562
+[2014-10-13 03:28:30 +0000] [1563] [INFO] Booting worker with pid: 1563
+[2014-10-13 03:28:30 +0000] [1564] [INFO] Booting worker with pid: 1564
+[2014-10-13 03:28:30 +0000] [1565] [INFO] Booting worker with pid: 1565
+[2014-10-13 18:49:41 +0000] [1103] [INFO] Starting gunicorn 19.1.1
+[2014-10-13 18:49:41 +0000] [1103] [INFO] Listening at: http://127.0.0.1:8000 (1103)
+[2014-10-13 18:49:41 +0000] [1103] [INFO] Using worker: sync
+[2014-10-13 18:49:41 +0000] [1127] [INFO] Booting worker with pid: 1127
+[2014-10-13 18:49:41 +0000] [1128] [INFO] Booting worker with pid: 1128
+[2014-10-13 18:49:41 +0000] [1129] [INFO] Booting worker with pid: 1129
+[2014-10-13 18:49:41 +0000] [1130] [INFO] Booting worker with pid: 1130
+[2014-10-13 20:04:27 +0000] [1103] [INFO] Handling signal: term
+[2014-10-13 20:04:27 +0000] [1128] [INFO] Worker exiting (pid: 1128)
+[2014-10-13 20:04:27 +0000] [1130] [INFO] Worker exiting (pid: 1130)
+[2014-10-13 20:04:27 +0000] [1129] [INFO] Worker exiting (pid: 1129)
+[2014-10-13 20:04:27 +0000] [1127] [INFO] Worker exiting (pid: 1127)
+[2014-10-13 20:04:27 +0000] [1103] [INFO] Shutting down: Master
+[2014-10-13 20:05:48 +0000] [1501] [INFO] Starting gunicorn 19.1.1
+[2014-10-13 20:05:48 +0000] [1501] [INFO] Listening at: http://127.0.0.1:8000 (1501)
+[2014-10-13 20:05:48 +0000] [1501] [INFO] Using worker: sync
+[2014-10-13 20:05:48 +0000] [1506] [INFO] Booting worker with pid: 1506
+[2014-10-13 20:05:48 +0000] [1507] [INFO] Booting worker with pid: 1507
+[2014-10-13 20:05:48 +0000] [1508] [INFO] Booting worker with pid: 1508
+[2014-10-13 20:05:48 +0000] [1509] [INFO] Booting worker with pid: 1509
+[2014-10-13 20:09:41 +0000] [1501] [INFO] Handling signal: int
+[2014-10-13 20:09:41 +0000] [1506] [INFO] Worker exiting (pid: 1506)
+[2014-10-13 20:09:41 +0000] [1507] [INFO] Worker exiting (pid: 1507)
+[2014-10-13 20:09:41 +0000] [1508] [INFO] Worker exiting (pid: 1508)
+[2014-10-13 20:09:41 +0000] [1509] [INFO] Worker exiting (pid: 1509)
+[2014-10-13 20:09:41 +0000] [1501] [INFO] Shutting down: Master
+[2014-10-13 20:10:38 +0000] [1535] [INFO] Starting gunicorn 19.1.1
+[2014-10-13 20:10:38 +0000] [1535] [INFO] Listening at: http://127.0.0.1:8000 (1535)
+[2014-10-13 20:10:38 +0000] [1535] [INFO] Using worker: sync
+[2014-10-13 20:10:38 +0000] [1540] [INFO] Booting worker with pid: 1540
+[2014-10-13 20:10:38 +0000] [1541] [INFO] Booting worker with pid: 1541
+[2014-10-13 20:10:38 +0000] [1542] [INFO] Booting worker with pid: 1542
+[2014-10-13 20:10:38 +0000] [1543] [INFO] Booting worker with pid: 1543
+[2014-10-13 20:19:52 +0000] [1535] [INFO] Handling signal: term
+[2014-10-13 20:19:52 +0000] [1540] [INFO] Worker exiting (pid: 1540)
+[2014-10-13 20:19:52 +0000] [1543] [INFO] Worker exiting (pid: 1543)
+[2014-10-13 20:19:52 +0000] [1541] [INFO] Worker exiting (pid: 1541)
+[2014-10-13 20:19:52 +0000] [1542] [INFO] Worker exiting (pid: 1542)
+[2014-10-13 20:19:52 +0000] [1535] [INFO] Shutting down: Master
+[2014-10-13 20:20:01 +0000] [1713] [INFO] Starting gunicorn 19.1.1
+[2014-10-13 20:20:01 +0000] [1713] [INFO] Listening at: http://127.0.0.1:8000 (1713)
+[2014-10-13 20:20:01 +0000] [1713] [INFO] Using worker: sync
+[2014-10-13 20:20:01 +0000] [1718] [INFO] Booting worker with pid: 1718
+[2014-10-13 20:20:01 +0000] [1719] [INFO] Booting worker with pid: 1719
+[2014-10-13 20:20:01 +0000] [1720] [INFO] Booting worker with pid: 1720
+[2014-10-13 20:20:01 +0000] [1721] [INFO] Booting worker with pid: 1721
+[2014-10-13 20:21:09 +0000] [1720] [INFO] Worker exiting (pid: 1720)
+[2014-10-13 20:21:09 +0000] [1719] [INFO] Worker exiting (pid: 1719)
+[2014-10-13 20:21:09 +0000] [1713] [INFO] Handling signal: int
+[2014-10-13 20:21:09 +0000] [1718] [INFO] Worker exiting (pid: 1718)
+[2014-10-13 20:21:09 +0000] [1721] [INFO] Worker exiting (pid: 1721)
+[2014-10-13 20:21:09 +0000] [1713] [INFO] Shutting down: Master
+[2014-10-13 20:21:43 +0000] [1795] [INFO] Starting gunicorn 19.1.1
+[2014-10-13 20:21:43 +0000] [1795] [INFO] Listening at: http://127.0.0.1:8000 (1795)
+[2014-10-13 20:21:43 +0000] [1795] [INFO] Using worker: sync
+[2014-10-13 20:21:43 +0000] [1800] [INFO] Booting worker with pid: 1800
+[2014-10-13 20:21:43 +0000] [1801] [INFO] Booting worker with pid: 1801
+[2014-10-13 20:21:43 +0000] [1802] [INFO] Booting worker with pid: 1802
+[2014-10-13 20:21:43 +0000] [1803] [INFO] Booting worker with pid: 1803
+[2014-10-13 20:23:22 +0000] [1803] [INFO] Worker exiting (pid: 1803)
+[2014-10-13 20:23:22 +0000] [1802] [INFO] Worker exiting (pid: 1802)
+[2014-10-13 20:23:22 +0000] [1801] [INFO] Worker exiting (pid: 1801)
+[2014-10-13 20:23:22 +0000] [1800] [INFO] Worker exiting (pid: 1800)
+[2014-10-13 20:23:22 +0000] [1795] [INFO] Handling signal: int
+[2014-10-13 20:23:22 +0000] [1795] [INFO] Shutting down: Master
+[2014-10-13 20:23:26 +0000] [1845] [INFO] Starting gunicorn 19.1.1
+[2014-10-13 20:23:26 +0000] [1845] [INFO] Listening at: http://127.0.0.1:8000 (1845)
+[2014-10-13 20:23:26 +0000] [1845] [INFO] Using worker: sync
+[2014-10-13 20:23:26 +0000] [1850] [INFO] Booting worker with pid: 1850
+[2014-10-13 20:23:26 +0000] [1851] [INFO] Booting worker with pid: 1851
+[2014-10-13 20:23:26 +0000] [1852] [INFO] Booting worker with pid: 1852
+[2014-10-13 20:23:26 +0000] [1853] [INFO] Booting worker with pid: 1853
+[2014-10-13 20:24:50 +0000] [1850] [INFO] Worker exiting (pid: 1850)
+[2014-10-13 20:24:50 +0000] [1851] [INFO] Worker exiting (pid: 1851)
+[2014-10-13 20:24:50 +0000] [1845] [INFO] Handling signal: int
+[2014-10-13 20:24:50 +0000] [1853] [INFO] Worker exiting (pid: 1853)
+[2014-10-13 20:24:50 +0000] [1852] [INFO] Worker exiting (pid: 1852)
+[2014-10-13 20:24:50 +0000] [1845] [INFO] Shutting down: Master
+[2014-10-13 20:25:22 +0000] [1859] [INFO] Starting gunicorn 19.1.1
+[2014-10-13 20:25:22 +0000] [1859] [INFO] Listening at: http://127.0.0.1:8000 (1859)
+[2014-10-13 20:25:22 +0000] [1859] [INFO] Using worker: sync
+[2014-10-13 20:25:22 +0000] [1864] [INFO] Booting worker with pid: 1864
+[2014-10-13 20:25:22 +0000] [1865] [INFO] Booting worker with pid: 1865
+[2014-10-13 20:25:23 +0000] [1866] [INFO] Booting worker with pid: 1866
+[2014-10-13 20:25:23 +0000] [1867] [INFO] Booting worker with pid: 1867
+[2014-10-13 20:45:08 +0000] [1865] [INFO] Worker exiting (pid: 1865)
+[2014-10-13 20:45:08 +0000] [1859] [INFO] Handling signal: int
+[2014-10-13 20:45:08 +0000] [1867] [INFO] Worker exiting (pid: 1867)
+[2014-10-13 20:45:08 +0000] [1866] [INFO] Worker exiting (pid: 1866)
+[2014-10-13 20:45:08 +0000] [1864] [INFO] Worker exiting (pid: 1864)
+[2014-10-13 20:45:09 +0000] [1859] [INFO] Shutting down: Master
+[2014-10-13 20:47:33 +0000] [2111] [INFO] Starting gunicorn 19.1.1
+[2014-10-13 20:47:33 +0000] [2111] [INFO] Listening at: http://127.0.0.1:8000 (2111)
+[2014-10-13 20:47:33 +0000] [2111] [INFO] Using worker: sync
+[2014-10-13 20:47:33 +0000] [2116] [INFO] Booting worker with pid: 2116
+[2014-10-13 20:47:33 +0000] [2117] [INFO] Booting worker with pid: 2117
+[2014-10-13 20:47:33 +0000] [2118] [INFO] Booting worker with pid: 2118
+[2014-10-13 20:47:33 +0000] [2119] [INFO] Booting worker with pid: 2119
+[2014-10-13 20:56:45 +0000] [2119] [INFO] Worker exiting (pid: 2119)
+[2014-10-13 20:56:45 +0000] [2117] [INFO] Worker exiting (pid: 2117)
+[2014-10-13 20:56:45 +0000] [2116] [INFO] Worker exiting (pid: 2116)
+[2014-10-13 20:56:45 +0000] [2111] [INFO] Handling signal: int
+[2014-10-13 20:56:45 +0000] [2118] [INFO] Worker exiting (pid: 2118)
+[2014-10-13 20:56:45 +0000] [2111] [INFO] Shutting down: Master
+[2014-10-13 21:18:49 +0000] [2321] [INFO] Starting gunicorn 19.1.1
+[2014-10-13 21:18:49 +0000] [2321] [INFO] Listening at: http://127.0.0.1:8000 (2321)
+[2014-10-13 21:18:49 +0000] [2321] [INFO] Using worker: sync
+[2014-10-13 21:18:49 +0000] [2326] [INFO] Booting worker with pid: 2326
+[2014-10-13 21:18:50 +0000] [2327] [INFO] Booting worker with pid: 2327
+[2014-10-13 21:18:50 +0000] [2328] [INFO] Booting worker with pid: 2328
+[2014-10-13 21:18:50 +0000] [2329] [INFO] Booting worker with pid: 2329
+[2014-10-13 21:40:06 +0000] [2628] [INFO] Starting gunicorn 19.1.1
+[2014-10-13 21:40:06 +0000] [2628] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-13 21:40:06 +0000] [2628] [ERROR] Retrying in 1 second.
+[2014-10-13 21:40:07 +0000] [2628] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-13 21:40:07 +0000] [2628] [ERROR] Retrying in 1 second.
+[2014-10-13 21:40:10 +0000] [2628] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-13 21:40:10 +0000] [2628] [ERROR] Retrying in 1 second.
+[2014-10-13 21:40:11 +0000] [2628] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-13 21:40:11 +0000] [2628] [ERROR] Retrying in 1 second.
+[2014-10-13 21:40:12 +0000] [2628] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-13 21:40:12 +0000] [2628] [ERROR] Retrying in 1 second.
+[2014-10-13 21:40:13 +0000] [2628] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2014-10-13 21:47:16 +0000] [2321] [INFO] Handling signal: term
+[2014-10-13 21:47:16 +0000] [2329] [INFO] Worker exiting (pid: 2329)
+[2014-10-13 21:47:16 +0000] [2328] [INFO] Worker exiting (pid: 2328)
+[2014-10-13 21:47:16 +0000] [2326] [INFO] Worker exiting (pid: 2326)
+[2014-10-13 21:47:16 +0000] [2327] [INFO] Worker exiting (pid: 2327)
+[2014-10-13 21:47:16 +0000] [2321] [INFO] Shutting down: Master
+[2014-10-13 21:47:27 +0000] [2676] [INFO] Starting gunicorn 19.1.1
+[2014-10-13 21:47:27 +0000] [2676] [INFO] Listening at: http://127.0.0.1:8000 (2676)
+[2014-10-13 21:47:27 +0000] [2676] [INFO] Using worker: sync
+[2014-10-13 21:47:27 +0000] [2681] [INFO] Booting worker with pid: 2681
+[2014-10-13 21:47:27 +0000] [2682] [INFO] Booting worker with pid: 2682
+[2014-10-13 21:47:27 +0000] [2683] [INFO] Booting worker with pid: 2683
+[2014-10-13 21:47:27 +0000] [2684] [INFO] Booting worker with pid: 2684
+[2014-10-13 22:00:08 +0000] [2676] [INFO] Handling signal: term
+[2014-10-13 22:00:08 +0000] [2684] [INFO] Worker exiting (pid: 2684)
+[2014-10-13 22:00:08 +0000] [2682] [INFO] Worker exiting (pid: 2682)
+[2014-10-13 22:00:08 +0000] [2681] [INFO] Worker exiting (pid: 2681)
+[2014-10-13 22:00:08 +0000] [2683] [INFO] Worker exiting (pid: 2683)
+[2014-10-13 22:00:08 +0000] [2676] [INFO] Shutting down: Master
+[2014-10-13 22:00:48 +0000] [2970] [INFO] Starting gunicorn 19.1.1
+[2014-10-13 22:00:48 +0000] [2970] [INFO] Listening at: http://127.0.0.1:8000 (2970)
+[2014-10-13 22:00:48 +0000] [2970] [INFO] Using worker: sync
+[2014-10-13 22:00:48 +0000] [2975] [INFO] Booting worker with pid: 2975
+[2014-10-13 22:00:48 +0000] [2976] [INFO] Booting worker with pid: 2976
+[2014-10-13 22:00:48 +0000] [2977] [INFO] Booting worker with pid: 2977
+[2014-10-13 22:00:48 +0000] [2978] [INFO] Booting worker with pid: 2978
+[2014-10-13 22:03:27 +0000] [2978] [INFO] Worker exiting (pid: 2978)
+[2014-10-13 22:03:27 +0000] [2977] [INFO] Worker exiting (pid: 2977)
+[2014-10-13 22:03:27 +0000] [2975] [INFO] Worker exiting (pid: 2975)
+[2014-10-13 22:03:27 +0000] [2970] [INFO] Handling signal: int
+[2014-10-13 22:03:27 +0000] [2976] [INFO] Worker exiting (pid: 2976)
+[2014-10-13 22:03:28 +0000] [2970] [INFO] Shutting down: Master
+[2014-10-13 22:04:32 +0000] [3028] [INFO] Starting gunicorn 19.1.1
+[2014-10-13 22:04:32 +0000] [3028] [INFO] Listening at: http://127.0.0.1:8000 (3028)
+[2014-10-13 22:04:32 +0000] [3028] [INFO] Using worker: sync
+[2014-10-13 22:04:32 +0000] [3033] [INFO] Booting worker with pid: 3033
+[2014-10-13 22:04:32 +0000] [3034] [INFO] Booting worker with pid: 3034
+[2014-10-13 22:04:32 +0000] [3035] [INFO] Booting worker with pid: 3035
+[2014-10-13 22:04:32 +0000] [3036] [INFO] Booting worker with pid: 3036
+[2014-10-13 22:10:41 +0000] [3028] [INFO] Handling signal: term
+[2014-10-13 22:10:41 +0000] [3033] [INFO] Worker exiting (pid: 3033)
+[2014-10-13 22:10:41 +0000] [3034] [INFO] Worker exiting (pid: 3034)
+[2014-10-13 22:10:41 +0000] [3035] [INFO] Worker exiting (pid: 3035)
+[2014-10-13 22:10:41 +0000] [3036] [INFO] Worker exiting (pid: 3036)
+[2014-10-13 22:10:41 +0000] [3028] [INFO] Shutting down: Master
+[2014-10-13 22:10:54 +0000] [3088] [INFO] Starting gunicorn 19.1.1
+[2014-10-13 22:10:54 +0000] [3088] [INFO] Listening at: http://127.0.0.1:8000 (3088)
+[2014-10-13 22:10:54 +0000] [3088] [INFO] Using worker: sync
+[2014-10-13 22:10:54 +0000] [3093] [INFO] Booting worker with pid: 3093
+[2014-10-13 22:10:54 +0000] [3094] [INFO] Booting worker with pid: 3094
+[2014-10-13 22:10:54 +0000] [3095] [INFO] Booting worker with pid: 3095
+[2014-10-13 22:10:54 +0000] [3096] [INFO] Booting worker with pid: 3096
+[2014-10-13 23:05:11 +0000] [3088] [INFO] Handling signal: hup
+[2014-10-13 23:05:11 +0000] [3088] [INFO] Hang up: Master
+[2014-10-13 23:05:11 +0000] [3134] [INFO] Booting worker with pid: 3134
+[2014-10-13 23:05:11 +0000] [3138] [INFO] Booting worker with pid: 3138
+[2014-10-13 23:05:11 +0000] [3135] [INFO] Booting worker with pid: 3135
+[2014-10-13 23:05:11 +0000] [3136] [INFO] Booting worker with pid: 3136
+[2014-10-13 23:05:11 +0000] [3137] [INFO] Booting worker with pid: 3137
+[2014-10-13 23:05:12 +0000] [3134] [INFO] Worker exiting (pid: 3134)
+[2014-10-13 23:10:15 +0000] [3088] [INFO] Handling signal: term
+[2014-10-13 23:10:15 +0000] [3136] [INFO] Worker exiting (pid: 3136)
+[2014-10-13 23:10:15 +0000] [3135] [INFO] Worker exiting (pid: 3135)
+[2014-10-13 23:10:15 +0000] [3137] [INFO] Worker exiting (pid: 3137)
+[2014-10-13 23:10:15 +0000] [3138] [INFO] Worker exiting (pid: 3138)
+[2014-10-13 23:10:15 +0000] [3088] [INFO] Shutting down: Master
+[2014-10-13 23:10:24 +0000] [3316] [INFO] Starting gunicorn 19.1.1
+[2014-10-13 23:10:24 +0000] [3316] [INFO] Listening at: http://127.0.0.1:8000 (3316)
+[2014-10-13 23:10:24 +0000] [3316] [INFO] Using worker: sync
+[2014-10-13 23:10:24 +0000] [3321] [INFO] Booting worker with pid: 3321
+[2014-10-13 23:10:25 +0000] [3322] [INFO] Booting worker with pid: 3322
+[2014-10-13 23:10:25 +0000] [3323] [INFO] Booting worker with pid: 3323
+[2014-10-13 23:10:25 +0000] [3324] [INFO] Booting worker with pid: 3324
+[2014-10-13 23:14:03 +0000] [3316] [INFO] Handling signal: term
+[2014-10-13 23:14:03 +0000] [3321] [INFO] Worker exiting (pid: 3321)
+[2014-10-13 23:14:03 +0000] [3322] [INFO] Worker exiting (pid: 3322)
+[2014-10-13 23:14:03 +0000] [3323] [INFO] Worker exiting (pid: 3323)
+[2014-10-13 23:14:03 +0000] [3324] [INFO] Worker exiting (pid: 3324)
+[2014-10-13 23:14:03 +0000] [3316] [INFO] Shutting down: Master
+[2014-10-13 23:14:16 +0000] [3443] [INFO] Starting gunicorn 19.1.1
+[2014-10-13 23:14:16 +0000] [3443] [INFO] Listening at: http://127.0.0.1:8000 (3443)
+[2014-10-13 23:14:16 +0000] [3443] [INFO] Using worker: sync
+[2014-10-13 23:14:16 +0000] [3448] [INFO] Booting worker with pid: 3448
+[2014-10-13 23:14:16 +0000] [3449] [INFO] Booting worker with pid: 3449
+[2014-10-13 23:14:16 +0000] [3450] [INFO] Booting worker with pid: 3450
+[2014-10-13 23:14:16 +0000] [3451] [INFO] Booting worker with pid: 3451
+[2014-10-13 23:17:05 +0000] [3443] [INFO] Handling signal: term
+[2014-10-13 23:17:05 +0000] [3448] [INFO] Worker exiting (pid: 3448)
+[2014-10-13 23:17:05 +0000] [3449] [INFO] Worker exiting (pid: 3449)
+[2014-10-13 23:17:05 +0000] [3450] [INFO] Worker exiting (pid: 3450)
+[2014-10-13 23:17:05 +0000] [3451] [INFO] Worker exiting (pid: 3451)
+[2014-10-13 23:17:05 +0000] [3443] [INFO] Shutting down: Master
+[2014-10-13 23:17:16 +0000] [3500] [INFO] Starting gunicorn 19.1.1
+[2014-10-13 23:17:16 +0000] [3500] [INFO] Listening at: http://127.0.0.1:8000 (3500)
+[2014-10-13 23:17:16 +0000] [3500] [INFO] Using worker: sync
+[2014-10-13 23:17:16 +0000] [3505] [INFO] Booting worker with pid: 3505
+[2014-10-13 23:17:16 +0000] [3506] [INFO] Booting worker with pid: 3506
+[2014-10-13 23:17:16 +0000] [3507] [INFO] Booting worker with pid: 3507
+[2014-10-13 23:17:16 +0000] [3508] [INFO] Booting worker with pid: 3508

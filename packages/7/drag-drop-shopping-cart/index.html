@@ -1,0 +1,206 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Drag and drop shopping cart with jQuery UI</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="jquery-ui-1.9.0.custom.min.js"></script>
+</head>
+<body>
+
+
+<div class="container">
+
+    <section id="product">
+        <ul class="clear">
+            <li data-id="1">
+                <a href="#">
+                    <img src="http://lorempixel.com/150/100/animals/1/" alt="">
+                    <h3>El rinocerótido (Rhinocerotidae)</h3>
+                
+                </a>
+            </li>
+            <li data-id="2">
+                <a href="#">
+                    <img src="http://lorempixel.com/150/100/animals/2/" alt="">
+            		<h3>El gorila (género Gorilla)</h3>
+                
+                </a>
+            </li>
+            <li data-id="3">
+                <a href="#">
+                    <img src="http://lorempixel.com/150/100/animals/3/" alt="">
+            		<h3>El tigre (Panthera tigris) </h3>
+                
+                </a>
+            </li>
+            <li data-id="4">
+                <a href="#">
+                    <img src="http://lorempixel.com/150/100/animals/4/" alt="">
+            		<h3>La jirafa (Giraffa camelopardalis)</h3>
+                
+                </a>
+            </li>
+            <li data-id="5">
+                <a href="#">
+                    <img src="http://lorempixel.com/150/100/animals/10/" alt="">
+                    <h3>El caballo (Equus ferus caballus)</h3>
+                    
+                </a>
+            </li>
+            <li data-id="6">
+                <a href="#">
+                    <img src="http://lorempixel.com/150/100/animals/6/" alt="">
+            		<h3>El cerdo (Sus scrofa) </h3>
+                    
+                </a>
+            </li>
+            <li data-id="7">
+                <a href="#">
+                    <img src="http://lorempixel.com/150/100/animals/7/" alt="">
+            		<h3>El gato (Felis catus) </h3>
+                
+                </a>
+            </li>
+            <li data-id="8">
+                <a href="#">
+                    <img src="http://lorempixel.com/150/100/animals/8/" alt="">
+            		<h3>El perro (Canis lupus)</h3>
+                </a>
+            </li>
+        </ul>
+  </section>
+
+    <form>
+    <aside id="sidebar">
+        <div class="basket">
+            <div id="basket1" class="basket_list">
+                <div class="head">
+                    <span class="name">Animales domesticos</span>
+                </div>
+                <ul>
+                    
+                </ul>
+            </div>
+        </div>
+  </aside>
+    <h1>  </h1>
+     <aside id="sidebar">
+        <div class="basket">
+            <div id="basket2"class="basket_list">
+                <div class="head">
+                    <span class="name">Animales salvajes</span>
+                </div>
+                <ul>
+                  </ul>
+            </div>
+        </div>
+  </aside>
+  </form>
+
+  <button class="check">Calificar</button>
+</div>
+
+<script>
+    $(function () {
+
+		// jQuery UI Draggable
+		$("#product li").draggable({
+		
+			// brings the item back to its place when dragging is over
+			revert:true,
+		
+			// once the dragging starts, we decrease the opactiy of other items
+			// Appending a class as we do that with CSS
+			drag:function () {
+				$(this).addClass("active");
+				$(this).closest("#product").addClass("active");
+			},
+		
+		  // removing the CSS classes once dragging is over.
+            stop:function () {
+                $(this).removeClass("active").closest("#product").removeClass("active");
+                $(this).droppable("disable")
+            }
+		});
+
+        // jQuery Ui Droppable
+		$(".basket").droppable({
+		
+			activeClass:"active",
+		    hoverClass:"hover",
+		
+			
+			tolerance:"touch",
+			drop:function (event, ui) {
+		
+				var basket = $(this),
+						move = ui.draggable,
+						itemId = basket.find("ul li[data-id='" + move.attr("data-id") + "']");
+		
+				if (itemId.html() != null) {
+					itemId.find("input").val(parseInt(itemId.find("input").val()) + 1);
+				}
+				else {
+					addBasket(basket, move);
+		
+				
+					move.find("input").val(parseInt(move.find("input").val()) + 1);
+				}
+			}
+		});
+
+        
+        function addBasket(basket, move) {
+			basket.find("ul").append('<li data-id="' + move.attr("data-id") + '">'
+					+ '<span class="name">' + move.find("h3").html() + '</span>'
+					);
+		}
+
+
+        // The function that is triggered once delete button is pressed
+        $(".basket ul li button.delete").live("click", function () {
+			$(this).closest("li").remove();
+		});
+
+        $(".check").click(function(){
+
+            note_per_good = 5/8;
+            calification = 0;
+
+            basket1_ops = [5,6,7,8];
+            basket2_ops = [1,2,3,4];
+
+            $("#basket1 ul li").each(function(){
+                id = $(this).attr('data-id');
+
+                for (var i = 0; i < basket1_ops.length; i++) {
+                    if (id == basket1_ops[i]){
+                        calification = calification + note_per_good;
+                        break;
+                    }     
+                };
+            });
+
+            $("#basket2 ul li").each(function(){
+                id = $(this).attr('data-id');
+
+                for (var i = 0; i < basket2_ops.length; i++) {
+                    if (id == basket2_ops[i]){
+                        calification = calification + note_per_good;
+                        break;
+                    }     
+                };
+            });
+
+            alert(calification);
+        });
+
+    });
+</script>
+
+
+</body>
+</html>
