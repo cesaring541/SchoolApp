@@ -66,7 +66,6 @@ class Nota(models.Model):
     id_actividad = models.ForeignKey(Actividad, db_column='ID_ACTIVIDAD') # Field name made lowercase.
     nota=models.DecimalField(max_digits=3,decimal_places=2,db_column='NOTA')
     id_estudiante = models.ForeignKey(User, db_column='ID_ESTUDIANTE')
-    descripcion = models.CharField(max_length=600, db_column='DESCRIPCION_NOTA') # Field name made lowercase.
 
 
 

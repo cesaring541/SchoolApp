@@ -139,3 +139,17 @@ def saveFormPaginaWiki(request):
 	paginawiki=PaginaWiki.objects.create(id_wiki=wiki,aporte=descripcion,id_estudiante=user)
 	request.session['uid']=id_wiki
 	return redirect(reverse('paginawiki'))
+
+def NotaActividad(request):
+	user=request.user.id
+	estudiante=User.objects.get(id=user)
+	nota=request.POST.get('nota')
+	uid_act=request.POST.get('uid_act')
+	actividad=Actividad.objects.get(id=uid_act)
+	nota=Nota.objects.create(id_actividad=actividad,nota=nota,id_estudiante=estudiante)
+
+	code = """
+		La nota ha sido registrada, <a href='"""+reverse('front')+""">Volver a inicio</a>
+	"""
+
+	return HttpResponse(code)

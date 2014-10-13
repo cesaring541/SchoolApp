@@ -16,5 +16,6 @@ urlpatterns = patterns('',
 	url(r'^paginawiki$', 'front.views.paginawiki', name='paginawiki'),
 	url(r'^formPaginaWiki$', 'front.views.formPaginaWiki', name='formPaginaWiki'),
 	url(r'^saveFormPaginaWiki$', 'front.views.saveFormPaginaWiki', name='saveFormPaginaWiki'),
+	url(r'^NotaActividad$', 'front.views.NotaActividad', name='NotaActividad'),
 
 )
