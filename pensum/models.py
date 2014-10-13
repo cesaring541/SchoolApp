@@ -80,9 +80,7 @@ import os
 
 def extract_package(path, package):
     #File to unzip
-    path = os.path.join('packages', path, os.path.basename(package.name))
-
-    path =path.replace('.zip', '')
+    path = os.path.join('packages', path)
 
     zfile = zipfile.ZipFile(package)
 
@@ -97,6 +95,9 @@ def extract_package(path, package):
     os.makedirs(path)
     #Unzip
     zfile.extractall(path)
+
+    path = path + os.path.basename(package.name)
+    path = path.replace('.zip', '')
 
     return path
 
