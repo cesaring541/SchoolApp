@@ -18,8 +18,9 @@ from custom.models import *
 @login_required(login_url='login')
 def front(request):
 	dat=request.user.grado
-	cursos
-	materias
+	cursos = None
+	materias = None
+	
 	try:
 		cursos=Cursos.objects.get(nombre_curso=dat)
 	except Cursos.DoesNotExist:
