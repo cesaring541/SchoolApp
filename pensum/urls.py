@@ -23,6 +23,24 @@ urlpatterns = patterns('',
 	url(r'^/selMatAct1$','pensum.views.selMatAct1', name='selMatAct1s'),
 	url(r'^/selMatActLog$','pensum.views.selMatActLog', name='selMatActLog'),
 	url(r'^/saveAct$','pensum.views.saveAct', name='saveAct'),
+	url(r'^/searchSelCursoLog$','pensum.views.searchSelCursoLog', name='searchSelCursoLog'),
+	url(r'^/searchSelMatLog1$','pensum.views.searchSelMatLog1', name='searchSelMatLog1'),
+	url(r'^/searchSelCursoLog2$','pensum.views.searchSelCursoLog2', name='searchSelCursoLog2'),
+
+
+	url(r'^/buscarlogro$','pensum.views.buscarlogro', name='buscarlogro'),
+	url(r'^/buscarActividad$','pensum.views.buscarActividad', name='buscarActividad'),
+	url(r'^/buscarIndicador$','pensum.views.buscarIndicador', name='buscarIndicador'),
+	
+	url(r'^/asistencia$','pensum.views.asistencia', name='asistencia'),
+	url(r'^/observador$','pensum.views.observador', name='observador'),
+	url(r'^/herramienta$','pensum.views.herramienta', name='herramienta'),
+	url(r'^/api$','pensum.views.api', name='api'),
+	url(r'^/boletin$','pensum.views.boletin', name='boletin'),
+	url(r'^/plataforma$','pensum.views.plataforma', name='plataforma'),
+
+
+
 
 
 

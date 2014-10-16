@@ -139,21 +139,72 @@ def saveAct(request):
 	fecha_final=request.POST.get('fecha_final')
 	descripcion_actividad=request.POST.get('narrativa')
 	is_external = request.POST.get('external')
-
+	print is_external
 	is_external = True if is_external == 'on' else False
 
 	if is_external:
 		activity_file = request.FILES.get('package')
-
-
-	actividad=Actividad.objects.create(
+		actividad=Actividad.objects.create(
 		id_logro=logro,nombre_actividad=nombre_actividad,
 		fecha_inicio=fecha_inicio,fecha_fin=fecha_final,
 		descripcion_actividad=descripcion_actividad,
-		actividad_externa=is_external, paquete=activity_file
-	)
+		actividad_externa=is_external, paquete=activity_file)
+	else:
+		actividad=Actividad.objects.create(
+		id_logro=logro,nombre_actividad=nombre_actividad,
+		fecha_inicio=fecha_inicio,fecha_fin=fecha_final,
+		descripcion_actividad=descripcion_actividad,
+		)
+		
+	
 	#actividad.save()
 	return redirect(reverse('pensum'),context_instance=RequestContext(request))
+
+def searchSelCursoLog(request):
+	cursos=Cursos.objects.filter(estado_curso =1)
+	data={'cursos':cursos}
+	return render_to_response('search/searchSelCurselog.html',data,context_instance=RequestContext(request))
+
+def searchSelMatLog1(request):
+	uid=request.POST.get("uid")
+	materias=Materia.objects.filter(id_cursos =uid)
+	data={'materias':materias}
+	return render_to_response('search/searchSelCurseMat.html',data,context_instance=RequestContext(request))
+
+def searchSelCursoLog2(request):
+	uid=request.POST.get("uid")
+	logro=Logro.objects.filter(id_materia =uid)
+	data={'logro':logro}
+	return render_to_response('search/searchSelCursoLog2.html',data,context_instance=RequestContext(request))
+
+
+def buscarlogro(request):
+	return render_to_response('edit/FbuscarLogro.html',context_instance=RequestContext(request))
+
+def buscarActividad(request):
+	return render_to_response('edit/FbuscarActividad.html',context_instance=RequestContext(request))
+
+def buscarIndicador(request):
+	return render_to_response('edit/FbuscarIndicador.html',context_instance=RequestContext(request))	
+
+def asistencia(request):
+	return redirect(reverse('selMat'),context_instance=RequestContext(request))
+
+def observador(request):
+	return redirect(reverse('selObs'),context_instance=RequestContext(request))
+
+def herramienta(request):
+	return redirect(reverse('crudHerramientas'),context_instance=RequestContext(request))
+
+def api(request):
+	return redirect(reverse('herramientas'),context_instance=RequestContext(request))
+
+def boletin(request):
+	return redirect(reverse('boletin'),context_instance=RequestContext(request))
+
+def plataforma(request):
+	return redirect(reverse('usoPlataforma'),context_instance=RequestContext(request))
+
 
 	
 

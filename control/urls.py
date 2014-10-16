@@ -11,6 +11,14 @@ urlpatterns = patterns('',
 	url(r'^/selObsUser$','control.views.selObsUser', name='selObsUser'),
 	url(r'^/saveObsUser$','control.views.saveObsUser', name='saveObsUser'),
 
+	url(r'^/herramienta$','control.views.herramienta', name='herramienta'),
+	url(r'^/api$','control.views.api', name='api'),
+	url(r'^/boletin$','control.views.boletin', name='boletin'),	
+	url(r'^/plataforma$','control.views.plataforma', name='plataforma'),
+	url(r'^/logros$','control.views.logros', name='logros'),
+	url(r'^/actividades$','control.views.actividades', name='actividades'),
+	url(r'^/indicadores$','control.views.indicadores', name='indicadores'),
+
 
 
 

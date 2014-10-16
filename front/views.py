@@ -26,15 +26,38 @@ def front(request):
 		materias=Materia.objects.filter(id_cursos=cursos.id)
 	except Cursos.DoesNotExist:
 		pass
-
+	rol=request.user.rol
+	print rol+"no"
+	if rol != 'estudiante':
+		print rol
+		return render_to_response('examples/500.html',context_instance=RequestContext(request))
 
 	data={'materias':materias}
 	return render_to_response('front/front.html',data,context_instance=RequestContext(request))
 
 def fromMenu(request):
 	curso=request.POST.get('uid')
-	materia=Materia.objects.get(id=curso)
-	data={'curso':curso,'materia':materia}
+	materia=None
+	logros=None
+	herramientas=None
+	user=None
+	estudiante=None
+	nota=None
+	try:
+		materia=Materia.objects.get(id=curso)
+		logros=Logro.objects.filter(id_materia=materia)
+		log=len(logros)
+		herramientas=Wiki.objects.filter(id_materia=materia)
+		herr=len(herramientas)
+		user=request.user.id
+		estudiante=User.objects.get(id=user)
+		nota=Nota.objects.filter(id_estudiante=estudiante)
+		n= len(nota)
+
+	except Materia.DoesNotExist:
+		pass
+
+	data={'curso':curso,'materia':materia,'log':log,'herr':herr,'n':n}
 	return render_to_response('front/pages/front/cursos.html', data,context_instance=RequestContext(request))
 
 def fromHerramienta(request):
@@ -64,10 +87,14 @@ def actividades(request):
 	id_user=request.user.id
 	usuario=User.objects.get(id=id_user)
 	ids=Envio.objects.filter(id_estudiante=usuario).values('id_actividad')
+	not_user=Nota.objects.filter(id_estudiante=usuario).values('id_actividad')
 
-
-	actividad=Actividad.objects.filter(id_logro=logro.id).exclude(id__in=ids)
-
+	filtered=Actividad.objects.filter(id_logro=logro.id).exclude(id__in=ids)
+	try:
+		actividad = filtered.exclude(id__in=not_user)
+	except Nota.DoesNotExist:
+		actividad=filtered
+	
 		
 	data={'actividad':actividad}
 	return render_to_response('front/pages/front/Actividades.html', data,context_instance=RequestContext(request))

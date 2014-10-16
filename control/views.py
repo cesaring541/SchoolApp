@@ -114,3 +114,25 @@ def saveObsUser(request):
 	request.session['message'] = 'La observacion se completo'
 		
 	return redirect(reverse('control'))
+
+
+def herramienta(request):
+	return redirect(reverse('crudHerramientas'),context_instance=RequestContext(request))
+
+def api(request):
+	return redirect(reverse('herramientas'),context_instance=RequestContext(request))
+
+def boletin(request):
+	return redirect(reverse('boletin'),context_instance=RequestContext(request))
+
+def plataforma(request):
+	return redirect(reverse('usoPlataforma'),context_instance=RequestContext(request))
+
+def logros(request):
+	return redirect(reverse('logro'),context_instance=RequestContext(request))
+
+def actividades(request):
+	return redirect(reverse('actividad'),context_instance=RequestContext(request))
+
+def indicadores(request):
+	return redirect(reverse('indicador'),context_instance=RequestContext(request))

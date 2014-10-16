@@ -12,13 +12,13 @@ from django.contrib import messages
 from register.models import *
 from pensum.models import *
 from control.models import *
+from custom.models import *
 
 
 
 def admin_login(request):
 
 	if request.user.is_authenticated():
-		print request.user
 		return redirect(reverse('index'))
 
 	if request.method == 'GET':
@@ -61,9 +61,9 @@ def admin_login(request):
 				login(request, user)
 				if user.rol=="estudiante":
 					
-					return redirect(reverse('front'))
+					return redirect(reverse('front'),context_instance=RequestContext(request))
 				else:
-					return redirect(reverse('index'))
+					return redirect(reverse('index'),context_instance=RequestContext(request))
 			else:
 				form_err = {}
 				form_err['error'] = 'Esta cuenta está deshabilitada'
@@ -102,12 +102,19 @@ def index (request):
 	#COntrol
 	asis=len(Asistencia.objects.all())
 	obs=len(Observacion.objects.all())
+	noto=len(Nota.objects.all())
+	wik=len(Wiki.objects.all())
+	user_active=request.user.rol
+	if user_active == 'estudiante':
+		return redirect(reverse('front'))
 	ctrl=asis+obs
-	data={'registro':registro,'est':est,'mat':mat, 'crtl':ctrl}
+	data={'registro':registro,'est':est,'mat':mat, 'crtl':ctrl,'noto':noto,'wik':wik}
 	return render_to_response('index.html',data, context_instance=RequestContext(request))
 
 @login_required(login_url='login')
 def front(request):
+	user=request.user.rol
+	print user
 	return render_to_response('front.html',context_instance=RequestContext(request))
 
 
@@ -126,4 +133,41 @@ def control(request):
 
 def configuracion(request):
 	return render_to_response('panelControl/Configuracion.html',context_instance=RequestContext(request))
+
+
+def boletin(request):
+	return render_to_response('crud/Boletines.html',context_instance=RequestContext(request))
+
+def crearBoletin(request):
+	return render_to_response('forms/FcrearBoletines.html',context_instance=RequestContext(request))
+
+def buscarBoletin(request):
+	return render_to_response('forms/FbuscarBoletines.html',context_instance=RequestContext(request))
+
+def usoPlataforma(request):
+	return render_to_response('crud/UsoDePlataforma.html', context_instance=RequestContext(request))
+
+def buscarEstadistica(request):
+	return render_to_response('forms/FbuscarUsoDePlataforma.html', context_instance=RequestContext(request))
+
+def logros(request):
+	return redirect(reverse('logro'),context_instance=RequestContext(request))
+
+def actividades(request):
+	return redirect(reverse('actividad'),context_instance=RequestContext(request))
+
+def indicadores(request):
+	return redirect(reverse('indicador'),context_instance=RequestContext(request))
+
+def asistencia(request):
+	return redirect(reverse('selMat'),context_instance=RequestContext(request))
+
+def observador(request):
+	return redirect(reverse('selObs'),context_instance=RequestContext(request))
+
+def herramienta(request):
+	return redirect(reverse('crudHerramientas'),context_instance=RequestContext(request))
+
+def api(request):
+	return redirect(reverse('Api'),context_instance=RequestContext(request))
 

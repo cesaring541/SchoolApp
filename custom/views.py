@@ -54,3 +54,28 @@ def saveWiki(request):
 	wiki=Wiki.objects.create(descripcion=descripcion,id_materia=materias,id_docente=docente)
 	wiki.save()
 	return redirect(reverse('herramientas'),context_instance=RequestContext(request))
+
+
+def Api(request):
+	return render_to_response('crud/API.html',context_instance=RequestContext(request))
+
+def logros(request):
+	return redirect(reverse('logro'),context_instance=RequestContext(request))
+
+def actividades(request):
+	return redirect(reverse('actividad'),context_instance=RequestContext(request))
+
+def indicadores(request):
+	return redirect(reverse('indicador'),context_instance=RequestContext(request))
+
+def asistencia(request):
+	return redirect(reverse('selMat'),context_instance=RequestContext(request))
+
+def observador(request):
+	return redirect(reverse('selObs'),context_instance=RequestContext(request))
+
+def boletin(request):
+	return redirect(reverse('boletin'),context_instance=RequestContext(request))
+
+def plataforma(request):
+	return redirect(reverse('usoPlataforma'),context_instance=RequestContext(request))

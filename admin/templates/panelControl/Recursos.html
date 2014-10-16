@@ -4,9 +4,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title> School</title>
+        <title> we-learning</title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
-        <!-- bootstrap 3.0.2 -->
          <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}" />
         <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}">
         <link rel="stylesheet" href="{% static "css/ionicons.min.css" %}">
@@ -15,9 +14,8 @@
         <link rel="stylesheet" href="{% static "css/fullcalendar/fullcalendar.css" %}">
         <link rel="stylesheet" href="{% static "css/daterangepicker/daterangepicker-bs3.css" %}" />
         <link rel="stylesheet" href="{% static "css/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" %}">
-        <link rel="stylesheet" href="{% static "css/AdminLTE.css" %}">
-      
-
+        <link rel="stylesheet" href="{% static "css/AdminLTE_fig.css" %}">
+  
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,9 +27,10 @@
     <body class="skin-blue">
         <!-- header logo: style can be found in header.less -->
         <header class="header">
-            <a href="index.html" class="logo">
+            <a href="#" class="logo">
                 <!-- Add the class icon to your logo image or logo icon to add the margining -->
-                School
+               <img src="{% static "img/v-learning100.png" %}"  alt="User Image" />
+
             </a>
             <!-- Header Navbar: style can be found in header.less -->
             <nav class="navbar navbar-static-top" role="navigation">
@@ -44,195 +43,6 @@
                 </a>
                 <div class="navbar-right">
                     <ul class="nav navbar-nav">
-                        <!-- Messages: style can be found in dropdown.less-->
-                        <li class="dropdown messages-menu">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa-envelope"></i>
-                                <span class="label label-success">4</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="header">You have 4 messages</li>
-                                <li>
-                                    <!-- inner menu: contains the actual data -->
-                                    <ul class="menu">
-                                        <li><!-- start message -->
-                                            <a href="#">
-                                                <div class="pull-left">
-                                                    <img src="img/avatar3.png" class="img-circle" alt="User Image"/>
-                                                </div>
-                                                <h4>
-                                                    Support Team
-                                                    <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                                                </h4>
-                                                <p>Why not buy a new awesome theme?</p>
-                                            </a>
-                                        </li><!-- end message -->
-                                        <li>
-                                            <a href="#">
-                                                <div class="pull-left">
-                                                    <img src="img/avatar2.png" class="img-circle" alt="user image"/>
-                                                </div>
-                                                <h4>
-                                                    AdminLTE Design Team
-                                                    <small><i class="fa fa-clock-o"></i> 2 hours</small>
-                                                </h4>
-                                                <p>Why not buy a new awesome theme?</p>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="pull-left">
-                                                    <img src="img/avatar.png" class="img-circle" alt="user image"/>
-                                                </div>
-                                                <h4>
-                                                    Developers
-                                                    <small><i class="fa fa-clock-o"></i> Today</small>
-                                                </h4>
-                                                <p>Why not buy a new awesome theme?</p>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="pull-left">
-                                                    <img src="img/avatar2.png" class="img-circle" alt="user image"/>
-                                                </div>
-                                                <h4>
-                                                    Sales Department
-                                                    <small><i class="fa fa-clock-o"></i> Yesterday</small>
-                                                </h4>
-                                                <p>Why not buy a new awesome theme?</p>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="pull-left">
-                                                    <img src="img/avatar.png" class="img-circle" alt="user image"/>
-                                                </div>
-                                                <h4>
-                                                    Reviewers
-                                                    <small><i class="fa fa-clock-o"></i> 2 days</small>
-                                                </h4>
-                                                <p>Why not buy a new awesome theme?</p>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="footer"><a href="#">See All Messages</a></li>
-                            </ul>
-                        </li>
-                        <!-- Notifications: style can be found in dropdown.less -->
-                        <li class="dropdown notifications-menu">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa-warning"></i>
-                                <span class="label label-warning">10</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="header">You have 10 notifications</li>
-                                <li>
-                                    <!-- inner menu: contains the actual data -->
-                                    <ul class="menu">
-                                        <li>
-                                            <a href="#">
-                                                <i class="ion ion-ios7-people info"></i> 5 new members joined today
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa fa-warning danger"></i> Very long description here that may not fit into the page and may cause design problems
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa fa-users warning"></i> 5 new members joined
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <i class="ion ion-ios7-cart success"></i> 25 sales made
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="ion ion-ios7-person danger"></i> You changed your username
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="footer"><a href="#">View all</a></li>
-                            </ul>
-                        </li>
-                        <!-- Tasks: style can be found in dropdown.less -->
-                        <li class="dropdown tasks-menu">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa-tasks"></i>
-                                <span class="label label-danger">9</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="header">Usted tiene 9 tareas</li>
-                                <li>
-                                    <!-- inner menu: contains the actual data -->
-                                    <ul class="menu">
-                                        <li><!-- Task item -->
-                                            <a href="#">
-                                                <h3>
-                                                    Design some buttons
-                                                    <small class="pull-right">20%</small>
-                                                </h3>
-                                                <div class="progress xs">
-                                                    <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                                        <span class="sr-only">20% Complete</span>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li><!-- end task item -->
-                                        <li><!-- Task item -->
-                                            <a href="#">
-                                                <h3>
-                                                    Create a nice theme
-                                                    <small class="pull-right">40%</small>
-                                                </h3>
-                                                <div class="progress xs">
-                                                    <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                                        <span class="sr-only">40% Complete</span>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li><!-- end task item -->
-                                        <li><!-- Task item -->
-                                            <a href="#">
-                                                <h3>
-                                                    Some task I need to do
-                                                    <small class="pull-right">60%</small>
-                                                </h3>
-                                                <div class="progress xs">
-                                                    <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                                        <span class="sr-only">60% Complete</span>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li><!-- end task item -->
-                                        <li><!-- Task item -->
-                                            <a href="#">
-                                                <h3>
-                                                    Make beautiful transitions
-                                                    <small class="pull-right">80%</small>
-                                                </h3>
-                                                <div class="progress xs">
-                                                    <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                                        <span class="sr-only">80% Complete</span>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li><!-- end task item -->
-                                    </ul>
-                                </li>
-                                <li class="footer">
-                                    <a href="#">View all tasks</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- User Account: style can be found in dropdown.less -->
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <i class="glyphicon glyphicon-user"></i>
@@ -241,18 +51,17 @@
                             <ul class="dropdown-menu">
                                 <!-- User image -->
                                 <li class="user-header bg-light-blue">
-                                    <img src="{{user.avatar}}" class="img-circle" alt="User Image" />
+                                    <img src="{% static "img/avatar.png" %}" class="img-circle" alt="User Image" />
                                     <p>
                                         {{ request.user.username }} - {{request.user.rol}}
                                     </p>
                                 </li>
-                                
                                 <!-- Menu Body -->
                                 <!-- Menu Footer-->
                                 <li class="user-footer">
-                                    <div class="pull-left">
+                                 <!--   <div class="pull-left">
                                         <a href="#" class="btn btn-default btn-flat">Perfil</a>
-                                    </div>
+                                    </div>-->
                                     <div class="pull-right">
                                         <a href="logout" class="btn btn-default btn-flat">Cerrar Sesión</a>
                                     </div>
@@ -271,28 +80,20 @@
                     <!-- Sidebar user panel -->
                     <div class="user-panel">
                         <div class="pull-left image">
-                            <img src="img/avatar3.png" class="img-circle" alt="User Image" />
+                            <img src="{% static "img/avatar.png" %}" class="img-circle" alt="User Image" />
                         </div>
                         <div class="pull-left info">
-                            <p>Hola, {{ request.user.username }}</p>
+                            <p>Holas, {{ request.user.username }}</p>
+
                             <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                         </div>
                     </div>
-                    <!-- search form -->
-                    <form action="#" method="get" class="sidebar-form">
-                        <div class="input-group">
-                            <input type="text" name="q" class="form-control" placeholder="Search..."/>
-                            <span class="input-group-btn">
-                                <button type='submit' name='seach' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
-                            </span>
-                        </div>
-                    </form>
                     <!-- /.search form -->
                     <!-- sidebar menu: : style can be found in sidebar.less -->
                     <ul class="sidebar-menu">
                         <li class="active">
-                            <a>
-                                <i class="fa fa-dashboard"></i> <span>Panel de Control</span>
+                            <a href="../">
+                                <i class="fa fa-dashboard"  ></i> <span >Panel de Control</span>
                             </a>
                         </li>
                          {% if request.user.is_superuser %}
@@ -301,8 +102,8 @@
                                 <i class="ion ion-person-add"></i> <span>Registro</span> <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="usuarios"><i class="fa fa-angle-double-right"></i> Usuario</a></li>
-                                <li><a href="pages/crud/Grupos.html"><i class="fa fa-angle-double-right"></i> Grupo</a></li>
+                                <li><a href="registro/usuarios"><i class="fa fa-angle-double-right"></i> Usuario</a></li>
+                                <li><a href="registro/cursos"><i class="fa fa-angle-double-right"></i> Cursos</a></li>
                             </ul>
                         </li>
                         <li class="treeview">
@@ -310,8 +111,8 @@
                                 <i class="ion ion-bag"></i><span>Matriculas</span> <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="pages/forms/FcrearEstudiante.html"><i class="fa fa-angle-double-right"></i> Crear Estudiante</a></li>
-                                <li><a href="pages/forms/FBuscarEstudiante.html"><i class="fa fa-angle-double-right"></i> Buscar Estudiante</a></li>
+                                <li><a href="matriculas/formEstudiante"><i class="fa fa-angle-double-right"></i> Crear Estudiante</a></li>
+                                <li><a href="matriculas"><i class="fa fa-angle-double-right"></i> Buscar Estudiante</a></li>
                             </ul>
                         </li>
                         {%endif%}
@@ -323,10 +124,9 @@
                             </a>
                             <ul class="treeview-menu">
                                  {% if request.user.is_superuser %}
-                                <li><a href="pages/crud/Materia.html"><i class="fa fa-angle-double-right"></i> Materia</a></li>{%endif%}
-                                <li><a href="pages/crud/Logro.html"><i class="fa fa-angle-double-right"></i> Logro</a></li>
-                                <li><a href="pages/crud/Actividad.html"><i class="fa fa-angle-double-right"></i> Actividad</a></li>
-                                <li><a href="pages/crud/Indicador.html"><i class="fa fa-angle-double-right"></i> Indicador</a></li>
+                                <li><a href="pensum/materias"><i class="fa fa-angle-double-right"></i>Materia</a></li>{%endif%}
+                                <li><a href="logros"><i class="fa fa-angle-double-right"></i> Logro</a></li>
+                                <li><a href="actividades"><i class="fa fa-angle-double-right"></i> Actividad</a></li>
                                 
                             </ul>
                         </li>
@@ -336,8 +136,8 @@
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="pages/crud/Asistencia.html"><i class="fa fa-angle-double-right"></i> Asistencia</a></li>
-                                <li><a href="pages/crud/Observador.html"><i class="fa fa-angle-double-right"></i> Observador</a></li>
+                                <li><a href="asistencia"><i class="fa fa-angle-double-right"></i> Asistencia</a></li>
+                                <li><a href="observador"><i class="fa fa-angle-double-right"></i> Observador</a></li>
                            
                             </ul>
                         </li>
@@ -347,8 +147,8 @@
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="pages/crud/Herramienta.html"><i class="fa fa-angle-double-right"></i> Herramienta</a></li>
-                                <li><a href="pages/crud/API.html"><i class="fa fa-angle-double-right"></i> API</a></li>
+                                <li><a href="crudHerr"><i class="fa fa-angle-double-right"></i> Herramienta</a></li>
+                                <li><a href="Api"><i class="fa fa-angle-double-right"></i> API</a></li>
                             </ul>
                         </li>
                         <li class="treeview">
@@ -357,8 +157,8 @@
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="pages/crud/Boletines.html"><i class="fa fa-angle-double-right"></i> Boletines</a></li>
-                                <li><a href="pages/crud/UsoDePlataforma.html"><i class="fa fa-angle-double-right"></i> Uso de plataforma</a></li>
+                                <li><a href="boletin"><i class="fa fa-angle-double-right"></i> Boletines</a></li>
+                                <li><a href="plataforma"><i class="fa fa-angle-double-right"></i> Uso de plataforma</a></li>
                             </ul>
                         </li>
                          {% if request.user.is_superuser %}
@@ -368,9 +168,9 @@
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="pages/crud/Identidad.html"><i class="fa fa-angle-double-right"></i> Identidad institucional</a></li>
-                                <li><a href="pages/crud/Errores.html"><i class="fa fa-angle-double-right"></i> Errores</a></li>
-                                <li><a href="pages/crud/Configuracion.html"><i class="fa fa-angle-double-right"></i> Configuración</a></li>
+                                <li><a href="configuracion"><i class="fa fa-angle-double-right"></i> Identidad institucional</a></li>
+                                <li><a href="configuracion"><i class="fa fa-angle-double-right"></i> Errores</a></li>
+                                <li><a href="configuracion"><i class="fa fa-angle-double-right"></i> Configuración</a></li>
 
                             </ul>
                         </li>
@@ -385,13 +185,8 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        
                         <small>Panel de control</small>
                     </h1>
-                    <ol class="breadcrumb">
-                        <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
-                        <li class="active">Panel de Control</li>
-                    </ol>
                 </section>
 
                 <!-- Main content -->
@@ -418,8 +213,7 @@
                             
                         </div><!-- ./col -->
                         <div class="col-lg-3 col-xs-7">
-                            <!-- small box -->
-                            <div class="small-box bg-aqua">
+                      <!--     <div class="small-box bg-aqua">
                                 <div class="inner">
                                     <h3>
                                         53<sup style="font-size: 20px"></sup>

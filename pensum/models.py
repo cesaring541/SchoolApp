@@ -13,6 +13,7 @@ class Materia(models.Model):
     estado_materia = models.BooleanField(default=True, db_column='ESTADO_MATERIA')
     descripcion_materia = models.CharField(max_length=600, db_column='DESCRIPCION_MATERIA')
 
+
     
     class Meta:
         db_table = u'Materia'
