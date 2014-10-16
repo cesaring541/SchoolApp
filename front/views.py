@@ -182,8 +182,18 @@ def NotaActividad(request):
 def fromNota(request):
 	mate=request.POST.get('materia')
 	materia=Materia.objects.get(id=mate)
-	logro=Logro.objects.filter(id=materia.id).values("id")
-	print logro.id
-	actividad=Actividad.objects.filter(id_logro=logro.id)
-	data={'actividad':actividad}
-	return render_to_response('front/pages/front/NotaPorHerramienta.html',data, context_instance=RequestContext(request))
+	logros=Logro.objects.filter(id=materia.id)
+
+	all_activities = None
+	
+	for logro in logros:
+		if all_activities:
+			all_activities = all_activities + logro.actividad_set.all()
+		else:
+			all_activities = logro.actividad_set.all()
+
+
+	
+
+	data={'all_activities':all_activities}
+	return render_to_response('front/pages/front/NotaPorMateria.html',data, context_instance=RequestContext(request))

@@ -149,25 +149,28 @@
                                             <th>Nota</th>
                                         </tr>
                                 <form class="input-group" role="form" action="notExterna" method="POST">
-                                    {%for nota in nota%}
-                                      
+                                    {%for activity in all_activities%}
+
+                                        {% for note in activity.nota_set.all %}
+                                        
+                                        {% if note.id_estudiante.id == request.user.id %}
                                        
                                        <tr>
                                         <input name="ui-not" type="hidden" value={{nota.id}}>
                                   
-                                        <td name="materia">{{nota.id_estudiante.username}}</td>
-                                        <td>{{nota.id_actividad.nombre_actividad}}</td>
+                                        <td name="materia">{{note.id_estudiante.username}}</td>
+                                        <td>{{note.id_actividad.nombre_actividad}}</td>
                                          <td>
-                                           {{nota.nota}}
+                                           {{note.nota}}
                                         </td>
                                                 {% csrf_token %}
                                                                                     
                                        
                                         
                                     </tr>
-                                         
+                                         {% endif %}
                                                                                     
-                                      
+                                      {% endfor %}
 
                                     {%endfor%} 
 
