@@ -178,3 +178,12 @@ def NotaActividad(request):
 	code = 'La nota ha sido registrada, <a href="'+reverse('front')+'">Volver a inicio</a>'
 
 	return HttpResponse(code)
+
+def fromNota(request):
+	mate=request.POST.get('materia')
+	materia=Materia.objects.get(id=mate)
+	logro=Logro.objects.filter(id=materia.id).values("id")
+	print logro.id
+	actividad=Actividad.objects.filter(id_logro=logro.id)
+	data={'actividad':actividad}
+	return render_to_response('front/pages/front/NotaPorHerramienta.html',data, context_instance=RequestContext(request))
