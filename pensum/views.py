@@ -16,7 +16,6 @@ from register.models import Cursos
 from django.http import HttpResponseRedirect
 
 
-
 def pensum(request):
 	mat=len(Materia.objects.all())
 	log=len(Logro.objects.all())
