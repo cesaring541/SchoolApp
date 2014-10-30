@@ -312,3 +312,172 @@
 [2014-10-13 23:17:16 +0000] [3506] [INFO] Booting worker with pid: 3506
 [2014-10-13 23:17:16 +0000] [3507] [INFO] Booting worker with pid: 3507
 [2014-10-13 23:17:16 +0000] [3508] [INFO] Booting worker with pid: 3508
+[2014-10-20 02:47:08 +0000] [7820] [INFO] Starting gunicorn 19.1.1
+[2014-10-20 02:47:08 +0000] [7820] [INFO] Listening at: http://127.0.0.1:8000 (7820)
+[2014-10-20 02:47:08 +0000] [7820] [INFO] Using worker: sync
+[2014-10-20 02:47:08 +0000] [7825] [INFO] Booting worker with pid: 7825
+[2014-10-20 02:47:08 +0000] [7826] [INFO] Booting worker with pid: 7826
+[2014-10-20 02:47:09 +0000] [7827] [INFO] Booting worker with pid: 7827
+[2014-10-20 02:47:09 +0000] [7828] [INFO] Booting worker with pid: 7828
+[2014-10-20 02:48:35 +0000] [7833] [INFO] Starting gunicorn 19.1.1
+[2014-10-20 02:48:35 +0000] [7833] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 02:48:35 +0000] [7833] [ERROR] Retrying in 1 second.
+[2014-10-20 02:48:36 +0000] [7833] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 02:48:36 +0000] [7833] [ERROR] Retrying in 1 second.
+[2014-10-20 02:48:37 +0000] [7833] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 02:48:37 +0000] [7833] [ERROR] Retrying in 1 second.
+[2014-10-20 02:48:38 +0000] [7833] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 02:48:38 +0000] [7833] [ERROR] Retrying in 1 second.
+[2014-10-20 02:48:39 +0000] [7833] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 02:48:39 +0000] [7833] [ERROR] Retrying in 1 second.
+[2014-10-20 02:48:40 +0000] [7833] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2014-10-20 02:50:17 +0000] [7896] [INFO] Starting gunicorn 19.1.1
+[2014-10-20 02:50:17 +0000] [7896] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 02:50:17 +0000] [7896] [ERROR] Retrying in 1 second.
+[2014-10-20 02:50:18 +0000] [7896] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 02:50:18 +0000] [7896] [ERROR] Retrying in 1 second.
+[2014-10-20 02:50:19 +0000] [7896] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 02:50:19 +0000] [7896] [ERROR] Retrying in 1 second.
+[2014-10-20 02:50:20 +0000] [7896] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 02:50:20 +0000] [7896] [ERROR] Retrying in 1 second.
+[2014-10-20 02:50:21 +0000] [7896] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 02:50:21 +0000] [7896] [ERROR] Retrying in 1 second.
+[2014-10-20 02:50:22 +0000] [7896] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2014-10-20 02:51:52 +0000] [7901] [INFO] Starting gunicorn 19.1.1
+[2014-10-20 02:51:52 +0000] [7901] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 02:51:52 +0000] [7901] [ERROR] Retrying in 1 second.
+[2014-10-20 02:51:53 +0000] [7901] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 02:51:53 +0000] [7901] [ERROR] Retrying in 1 second.
+[2014-10-20 02:51:54 +0000] [7901] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 02:51:54 +0000] [7901] [ERROR] Retrying in 1 second.
+[2014-10-20 02:51:55 +0000] [7901] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 02:51:55 +0000] [7901] [ERROR] Retrying in 1 second.
+[2014-10-20 02:51:56 +0000] [7901] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 02:51:56 +0000] [7901] [ERROR] Retrying in 1 second.
+[2014-10-20 02:51:57 +0000] [7901] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2014-10-20 02:52:06 +0000] [7906] [INFO] Starting gunicorn 19.1.1
+[2014-10-20 02:52:06 +0000] [7906] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 02:52:06 +0000] [7906] [ERROR] Retrying in 1 second.
+[2014-10-20 02:52:07 +0000] [7906] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 02:52:07 +0000] [7906] [ERROR] Retrying in 1 second.
+[2014-10-20 02:52:13 +0000] [7906] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 02:52:13 +0000] [7906] [ERROR] Retrying in 1 second.
+[2014-10-20 02:52:14 +0000] [7906] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 02:52:14 +0000] [7906] [ERROR] Retrying in 1 second.
+[2014-10-20 02:52:15 +0000] [7906] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 02:52:15 +0000] [7906] [ERROR] Retrying in 1 second.
+[2014-10-20 02:52:16 +0000] [7906] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2014-10-20 03:00:19 +0000] [8005] [INFO] Starting gunicorn 19.1.1
+[2014-10-20 03:00:19 +0000] [8005] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 03:00:19 +0000] [8005] [ERROR] Retrying in 1 second.
+[2014-10-20 03:00:20 +0000] [8005] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 03:00:20 +0000] [8005] [ERROR] Retrying in 1 second.
+[2014-10-20 03:00:21 +0000] [8005] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 03:00:21 +0000] [8005] [ERROR] Retrying in 1 second.
+[2014-10-20 03:00:22 +0000] [8005] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 03:00:22 +0000] [8005] [ERROR] Retrying in 1 second.
+[2014-10-20 03:00:23 +0000] [8005] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 03:00:23 +0000] [8005] [ERROR] Retrying in 1 second.
+[2014-10-20 03:00:24 +0000] [8005] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2014-10-20 03:02:01 +0000] [8037] [INFO] Starting gunicorn 19.1.1
+[2014-10-20 03:02:01 +0000] [8037] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 03:02:01 +0000] [8037] [ERROR] Retrying in 1 second.
+[2014-10-20 03:02:02 +0000] [8037] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 03:02:02 +0000] [8037] [ERROR] Retrying in 1 second.
+[2014-10-20 03:02:03 +0000] [8037] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 03:02:03 +0000] [8037] [ERROR] Retrying in 1 second.
+[2014-10-20 03:02:09 +0000] [8037] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 03:02:09 +0000] [8037] [ERROR] Retrying in 1 second.
+[2014-10-20 03:02:10 +0000] [8037] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 03:02:10 +0000] [8037] [ERROR] Retrying in 1 second.
+[2014-10-20 03:02:11 +0000] [8037] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2014-10-20 03:04:08 +0000] [8072] [INFO] Starting gunicorn 19.1.1
+[2014-10-20 03:04:08 +0000] [8072] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 03:04:08 +0000] [8072] [ERROR] Retrying in 1 second.
+[2014-10-20 03:04:09 +0000] [8072] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 03:04:09 +0000] [8072] [ERROR] Retrying in 1 second.
+[2014-10-20 03:04:10 +0000] [8072] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 03:04:10 +0000] [8072] [ERROR] Retrying in 1 second.
+[2014-10-20 03:04:11 +0000] [8072] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 03:04:11 +0000] [8072] [ERROR] Retrying in 1 second.
+[2014-10-20 03:04:12 +0000] [8072] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 03:04:12 +0000] [8072] [ERROR] Retrying in 1 second.
+[2014-10-20 03:04:13 +0000] [8072] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2014-10-20 03:04:28 +0000] [8080] [INFO] Starting gunicorn 19.1.1
+[2014-10-20 03:04:28 +0000] [8080] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 03:04:28 +0000] [8080] [ERROR] Retrying in 1 second.
+[2014-10-20 03:04:29 +0000] [8080] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 03:04:29 +0000] [8080] [ERROR] Retrying in 1 second.
+[2014-10-20 03:04:30 +0000] [8080] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 03:04:30 +0000] [8080] [ERROR] Retrying in 1 second.
+[2014-10-20 03:04:35 +0000] [8080] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 03:04:35 +0000] [8080] [ERROR] Retrying in 1 second.
+[2014-10-20 03:04:36 +0000] [8080] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 03:04:36 +0000] [8080] [ERROR] Retrying in 1 second.
+[2014-10-20 03:04:37 +0000] [8080] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2014-10-20 03:07:12 +0000] [8117] [INFO] Starting gunicorn 19.1.1
+[2014-10-20 03:07:12 +0000] [8117] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 03:07:12 +0000] [8117] [ERROR] Retrying in 1 second.
+[2014-10-20 03:07:13 +0000] [8117] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 03:07:13 +0000] [8117] [ERROR] Retrying in 1 second.
+[2014-10-20 03:07:14 +0000] [8117] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 03:07:14 +0000] [8117] [ERROR] Retrying in 1 second.
+[2014-10-20 03:07:21 +0000] [8117] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 03:07:21 +0000] [8117] [ERROR] Retrying in 1 second.
+[2014-10-20 03:07:22 +0000] [8117] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 03:07:22 +0000] [8117] [ERROR] Retrying in 1 second.
+[2014-10-20 03:07:23 +0000] [8117] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2014-10-20 03:09:51 +0000] [8141] [INFO] Starting gunicorn 19.1.1
+[2014-10-20 03:09:51 +0000] [8141] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 03:09:51 +0000] [8141] [ERROR] Retrying in 1 second.
+[2014-10-20 03:09:52 +0000] [8141] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 03:09:52 +0000] [8141] [ERROR] Retrying in 1 second.
+[2014-10-20 03:09:53 +0000] [8141] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 03:09:53 +0000] [8141] [ERROR] Retrying in 1 second.
+[2014-10-20 03:09:54 +0000] [8141] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 03:09:54 +0000] [8141] [ERROR] Retrying in 1 second.
+[2014-10-20 03:09:55 +0000] [8141] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-20 03:09:55 +0000] [8141] [ERROR] Retrying in 1 second.
+[2014-10-20 03:09:56 +0000] [8141] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2014-10-20 03:14:18 +0000] [8219] [INFO] Starting gunicorn 19.1.1
+[2014-10-20 03:14:18 +0000] [8219] [INFO] Listening at: http://127.0.0.1:8000 (8219)
+[2014-10-20 03:14:18 +0000] [8219] [INFO] Using worker: sync
+[2014-10-20 03:14:18 +0000] [8224] [INFO] Booting worker with pid: 8224
+[2014-10-20 03:14:18 +0000] [8225] [INFO] Booting worker with pid: 8225
+[2014-10-20 03:14:18 +0000] [8226] [INFO] Booting worker with pid: 8226
+[2014-10-20 03:14:18 +0000] [8227] [INFO] Booting worker with pid: 8227
+[2014-10-20 03:20:59 +0000] [8219] [INFO] Handling signal: hup
+[2014-10-20 03:20:59 +0000] [8219] [INFO] Hang up: Master
+[2014-10-20 03:20:59 +0000] [8242] [INFO] Booting worker with pid: 8242
+[2014-10-20 03:20:59 +0000] [8243] [INFO] Booting worker with pid: 8243
+[2014-10-20 03:20:59 +0000] [8244] [INFO] Booting worker with pid: 8244
+[2014-10-20 03:20:59 +0000] [8245] [INFO] Booting worker with pid: 8245
+[2014-10-20 03:20:59 +0000] [8247] [INFO] Booting worker with pid: 8247
+[2014-10-20 03:20:59 +0000] [8246] [INFO] Booting worker with pid: 8246
+[2014-10-20 03:20:59 +0000] [8243] [INFO] Worker exiting (pid: 8243)
+[2014-10-20 03:20:59 +0000] [8242] [INFO] Worker exiting (pid: 8242)
+[2014-10-29 16:52:51 +0000] [23886] [INFO] Starting gunicorn 19.1.1
+[2014-10-29 16:52:51 +0000] [23886] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-29 16:52:51 +0000] [23886] [ERROR] Retrying in 1 second.
+[2014-10-29 16:52:52 +0000] [23886] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-29 16:52:52 +0000] [23886] [ERROR] Retrying in 1 second.
+[2014-10-29 16:52:53 +0000] [23886] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-29 16:52:53 +0000] [23886] [ERROR] Retrying in 1 second.
+[2014-10-29 16:52:54 +0000] [23886] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-29 16:52:54 +0000] [23886] [ERROR] Retrying in 1 second.
+[2014-10-29 16:52:55 +0000] [23886] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2014-10-29 16:52:55 +0000] [23886] [ERROR] Retrying in 1 second.
+[2014-10-29 16:52:56 +0000] [23886] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2014-10-29 16:52:56 +0000] [8245] [INFO] Worker exiting (pid: 8245)
+[2014-10-29 16:52:56 +0000] [8247] [INFO] Worker exiting (pid: 8247)
+[2014-10-29 16:52:56 +0000] [8219] [INFO] Handling signal: term
+[2014-10-29 16:52:56 +0000] [8244] [INFO] Worker exiting (pid: 8244)
+[2014-10-29 16:52:56 +0000] [8246] [INFO] Worker exiting (pid: 8246)
+[2014-10-29 16:52:56 +0000] [8219] [INFO] Shutting down: Master
+[2014-10-29 19:18:47 +0000] [1140] [INFO] Starting gunicorn 19.1.1
+[2014-10-29 19:18:47 +0000] [1140] [INFO] Listening at: http://127.0.0.1:8000 (1140)
+[2014-10-29 19:18:47 +0000] [1140] [INFO] Using worker: sync
+[2014-10-29 19:18:47 +0000] [1165] [INFO] Booting worker with pid: 1165
+[2014-10-29 19:18:48 +0000] [1168] [INFO] Booting worker with pid: 1168
+[2014-10-29 19:18:48 +0000] [1170] [INFO] Booting worker with pid: 1170
+[2014-10-29 19:18:48 +0000] [1172] [INFO] Booting worker with pid: 1172
